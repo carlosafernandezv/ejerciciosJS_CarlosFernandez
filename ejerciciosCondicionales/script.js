@@ -59,3 +59,20 @@ if (num1 > num2 && num1 > num3) {
    mayor = num3
 } 
 console.log("el numero mayor es: " + mayor)
+
+/* 05 Realizar un programa que dado 2 objetos representando personas con las propiedades
+nombre, edad y altura imprima por pantalla cual de las 2 personas es la mas alta y cual
+es la de mayor edad.*/
+
+
+let persona1 = {
+    nombre: "Carlos",
+    edad: "Fernandez",
+    altura: 170,
+  };
+  
+  var persona2 = {
+    nombre: "Juan",
+    edad: "Villalba",
+    altura: 155,
+  };
