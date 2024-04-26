@@ -124,3 +124,19 @@ a. Mi edad es igual a la de mi compañero: false
 b. Mi edad es mayor a la de mi compañero: true
 c. Mi edad es menor a la de mi compañero: false
  */
+
+/* 18 Compare su edad ingresada por pantalla con prompt() con el numero 18 y
+guardarlo en una variable llamada soyMayorDeEdad y mostrar por consola un
+mensaje que diga: Soy mayor de edad y el valor de la variable. */
+
+/* 19 Introducir por pantalla la edad y la altura de una persona y guardarlas en variables
+separadas y en una variable llamada puedeSubir el resultado de la operación
+resultante de si la persona es mayor de 6 años y además tiene una altura mínima
+de 120cm y mostrar por consola un mensaje como el siguiente: Puede subir a la
+atracción y el valor de la variable resultante. */
+
+/* 20 Introducir por pantalla el pase de una persona el cual puede ser “VIP”, “NORMAL”
+o “LIMITADO”, el saldo que dispone y guardarlos en variables separadas. En una
+variable llamada puedePasar guardar el resultado de la operación resultante de si
+la persona tiene pase “VIP” o si posee un saldo mayor a 1000. Mostrando un
+mensaje que diga: La persona puede pasar y el resultado de la variable. */
