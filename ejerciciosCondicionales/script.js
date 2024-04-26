@@ -28,7 +28,7 @@ if (num1 === num2) {
 /* 03 Realizar un programa que dado 2 números imprima por consola cual de los 2 numeros
 es el mas grande o si son iguales. */
 
-let nume1
+/* let nume1
 let nume2
 nume1 = parseInt(prompt("Ingrese el primer número: "))
 nume2 = parseInt(prompt("Ingrese el segundo número: "))
@@ -39,6 +39,7 @@ if (nume1 > nume2) {
 } else {
     console.log("Son Iguales")
 } 
+ */
 
 /* 04 Realizar un programa que dado 3 números imprima por pantalla cual de los 3 es el más
 chico */
@@ -46,9 +47,15 @@ chico */
 let num1
 let num2
 let num3
-num1=parseInt(prompt("ingrese el valor de numero1"))
-num2=parseInt(promis("ingrese el valor de numero2"))
-num3=parseInt(prompt("ingrese el valor de numero3"))
-if (num1>num2) {
-        
-}
+let mayor
+num1=parseInt(prompt("ingrese el valor del primer numero"))
+num2=parseInt(prompt("ingrese el valor del segundo numero"))
+num3=parseInt(prompt("ingrese el valor del tercer numero"))
+if (num1 > num2 && num1 > num3) {
+    mayor = num1
+} else if (num2>num1 && num2>num3) {
+    mayor = num2
+} else {
+   mayor = num3
+} 
+console.log("el numero mayor es: " + mayor)
