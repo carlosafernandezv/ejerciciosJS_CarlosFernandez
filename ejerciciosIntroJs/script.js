@@ -176,4 +176,5 @@ pase = prompt("ingresa cual es tu pase VIP, NORMAL o LIMITADO")
 saldoDisponible = prompt("ingresa tu saldo disponible")
 
 puedePasar = pase=== "VIP" && saldoDisponible>=1000
+console.log("La persona puede pasar " + puedePasar)
 
