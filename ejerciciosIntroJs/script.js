@@ -32,6 +32,7 @@ let divisionEdades = miEdad / edadMascota
 /* 10 Realizar la carga de las variables del punto 1 al 5 utilizando prompt() y luego
 ejecutar el código correspondiente para realizar los puntos del 6 al 9 con los datos
 cargados. */
+
 miNombre = prompt("ingresa tu nombre")
 miApellido = prompt("ingresa tu apellido")
 miEdad = prompt("ingresa tu edad")
@@ -64,7 +65,7 @@ console.log(alumno.genero)
 
 /* 12 Crear un objeto llamado mascota con un mínimo de 5 propiedades, mostrar dicho
 objeto utilizando console.table() y también mostrar cada una de las propiedades
-del objeto por separado. */ 
+del objeto por separado. */
 let mascota1 = {
     nombre: "Carlos",
     raza: "Boxer",
@@ -113,7 +114,7 @@ console.log(familia[4])
 elemento del array del punto 13, el cuarto elemento del punto 14 y el quinto
 objeto del array del punto 15 */
 
-let textoAleatorio = frutas[1] + numeros[1] + familia[4]
+let textoAleatorio = frutas[1] + numeros[3] + familia[4]
 console.log(textoAleatorio)
 
 /* 17 Utilizar prompt() para leer por pantalla mi edad y la edad de un compañero y
@@ -124,16 +125,43 @@ a. Mi edad es igual a la de mi compañero: false
 b. Mi edad es mayor a la de mi compañero: true
 c. Mi edad es menor a la de mi compañero: false
  */
+let tuEdad
+let suEdad
+let edadesIguales
+let soyMayor
+let soyMenor
+
+tuEdad = prompt("ingresa tu edad")
+suEdad = prompt("ingresa la edad de tu compañero")
+
+edadesIguales = tuEdad === suEdad
+soyMayor = tuEdad > suEdad
+soyMenor = tuEdad < suEdad
+
+console.log("Mi edad es igual a la de mi compañero: " + edadesIguales)
+console.log("Mi edad es mayor a la de mi compañero: " + soyMayor)
+console.log("Mi edad es menor a la de mi compañero: " + soyMenor)
 
 /* 18 Compare su edad ingresada por pantalla con prompt() con el numero 18 y
 guardarlo en una variable llamada soyMayorDeEdad y mostrar por consola un
 mensaje que diga: Soy mayor de edad y el valor de la variable. */
+let soyMayorDeEdad
+tuEdad = prompt("ingresa tu edad para ver si eres mayor")
+soyMayorDeEdad = tuEdad >= 18
+console.log("Soy mayor de edad " + tuEdad)
 
 /* 19 Introducir por pantalla la edad y la altura de una persona y guardarlas en variables
 separadas y en una variable llamada puedeSubir el resultado de la operación
 resultante de si la persona es mayor de 6 años y además tiene una altura mínima
 de 120cm y mostrar por consola un mensaje como el siguiente: Puede subir a la
 atracción y el valor de la variable resultante. */
+let laEdad
+let laAltura
+let MayorDeSeis
+laEdad = prompt("ingresa tu edad para ver si puedes subir a la atraccion")
+laAltura = prompt("ingresa tu altura")
+MayorDeSeis = laEdad >= 6 && laAltura >= 120
+console.log("Puede subir a la atracción por que tienes " + laEdad + " y la altura " + laAltura + "cm")
 
 /* 20 Introducir por pantalla el pase de una persona el cual puede ser “VIP”, “NORMAL”
 o “LIMITADO”, el saldo que dispone y guardarlos en variables separadas. En una
