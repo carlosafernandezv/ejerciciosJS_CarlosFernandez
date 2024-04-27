@@ -68,19 +68,25 @@ es la de mayor edad. */
 
 let persona1 = {
     nombre: "Carlos",
-    edad: "Fernandez",
-    altura: 170,
-  };
-  
-  var persona2 = {
-    nombre: "Juan",
-    edad: "Villalba",
-    altura: 155,
-  };
-  if (persona1 > persona2) {
-    
-  }
+    edad: 35,
+    altura: 150,
+};
 
+var persona2 = {
+    nombre: "Juan",
+    edad: 33,
+    altura: 155,
+};
+
+if (persona1.altura > persona2.altura && persona1.edad > persona2.edad) {
+    console.log(persona1.nombre + " Es mas alto y el de mayor edad")
+} else if (persona2.altura > persona1.altura && persona2.edad > persona1.edad) {
+    console.log(persona2.nombre + " Es mas alto y " + persona2.nombre + " Es el de mayor edad")
+} else if (persona2.altura > persona1.altura && persona1.edad > persona2.edad) {
+    console.log(persona2.nombre + " Es mas alto y " + persona1.nombre + " Es el de mayor edad")
+} else {
+    console.log(persona1.nombre + " Es mas alto y " + persona2.nombre + " Es el de mayor edad")
+}
 
 /* 06 Realizar un programa que permita ingresar por pantalla tu nombre, edad, altura, visión
 y permita determinar si estas capacitado para conducir. La persona deberá cumplir con
