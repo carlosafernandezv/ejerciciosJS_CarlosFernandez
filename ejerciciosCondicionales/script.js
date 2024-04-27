@@ -119,6 +119,7 @@ mismo nombre o poseer un pase vip o entrada, preguntar si desea comprar, caso
 afirmativo solicitar dinero disponible, si posee $1000 o más, mostrar mensaje de venta
 de entrada y bienvenida, caso contrario mostrar mensaje de rechazo de venta, y en
 caso contrario a no querer comprar, mostrar mensaje de despedida */
+
 let NombreMio = "jheesfri"
 let pase = "vip"
 let entrada = "si"
@@ -160,19 +161,132 @@ adivinar, un mensaje que diga: “Ganaste, haz adivinado el número.” No te pr
 usas mucho código repetido, mas adelante veraz como realizar este juego de manera
 más eficiente. */
 let numeroIncognita = 5
-let numeroIngresado
-
+let numeroIngresado = parseInt(prompt("Ingresa un numero entre 1 y 10"));
+if (numeroIngresado == numeroIncognita) {
+    console.log("ADIVINASTE, FELICITACIONES");
+} else if (numeroIngresado > numeroIncognita) {
+    numeroIngresado = parseInt(prompt("El numero ingresado es mayor, vuelve a intentarlo, ingresa otro ->"));
+    if (numeroIngresado == numeroIncognita) {
+        console.log("ADIVINASTE, FELICITACIONES");
+    } else if (numeroIngresado > numeroIncognita) {
+        numeroIngresado = parseInt(prompt("El numero ingresado es mayor, vuelve a intentarlo, ingresa otro ->"));
+        if (numeroIngresado == numeroIncognita) {
+            console.log("ADIVINASTE, FELICITACIONES");
+        } else if (numeroIngresado > numeroIncognita) {
+            console.log("El numero ingresado es mayor, PERDISTE");
+        } else {
+            console.log("El numero ingresado es menor, PERDISTE");
+        }
+    } else {
+        numeroIngresado = parseInt(prompt("El numero ingresado es menor, vuelve a intentarlo, ingresa otro ->"));
+        if (numeroIngresado == numeroIncognita) {
+            console.log("ADIVINASTE, FELICITACIONES");
+        } else if (numeroIngresado > numeroIncognita) {
+            console.log("El numero ingresado es mayor, PERDISTE");
+        } else {
+            console.log("El numero ingresado es menor, PERDISTE");
+        }
+    }
+} else {
+    numeroIngresado = parseInt(prompt("El numero ingresado es menor, vuelve a intentarlo, ingresa otro ->"));
+    if (numeroIngresado == numeroIncognita) {
+        console.log("ADIVINASTE, FELICITACIONES");
+    } else if (numeroIngresado > numeroIncognita) {
+        numeroIngresado = parseInt(prompt("El numero ingresado es mayor, vuelve a intentarlo, ingresa otro ->"));
+        if (numeroIngresado == numeroIncognita) {
+            console.log("ADIVINASTE, FELICITACIONES");
+        } else if (numeroIngresado > numeroIncognita) {
+            console.log("El numero ingresado es mayor, PERDISTE");
+        } else {
+            console.log("El numero ingresado es menor, PERDISTE");
+        }
+    } else {
+        numeroIngresado = parseInt(prompt("El numero ingresado es menor, vuelve a intentarlo, ingresa otro ->"));
+        if (numeroIngresado == numeroIncognita) {
+            console.log("ADIVINASTE, FELICITACIONES");
+        } else if (numeroIngresado > numeroIncognita) {
+            console.log("El numero ingresado es mayor, PERDISTE");
+        } else {
+            console.log("El numero ingresado es menor, PERDISTE");
+        }
+    }
+}
 
 
 /* 09 Crear un programa que permita ingresar tu edad y decir si eres un infante (0 a 12
 años), adolescente (13 a 18 años), un mayor joven (19 a 45 años) o un anciano (mas de
 45 años), y en caso de ingresar una edad mayor a 100 mostrar un mensaje
 preguntando si en realidad tiene esa edad. */
+edad = parseInt(prompt("Ingresa tu edad en numeros"));
+if (edad > 100) {
+    esVerdad = confirm("¿En realidad esa es tu edad?");
+    if (esVerdad == true) {
+        console.log("Llego tu hora amigo, despidete");
+    } else {
+        console.log("Me siento como cuando tu EX te mintio");
+    }
+} else if (edad > 45) {
+    console.log("Eres un anciano");
+} else if (edad >= 19 && edad <= 45) {
+    console.log("Eres un mayor joven");
+} else if (edad >= 13 && edad <= 18) {
+    console.log("Eres un adolecente");
+} else if (edad > 0 && edad <= 12) {
+    console.log("Eres un infante");
+} else {
+
+    console.log("Pajudo");
+}
 
 /*10 Crear un programa que permita el ingreso de “PIEDRA”, “PAPEL” o “TIJERAS” a 2
 jugadores y muestre en pantalla cual de los 2 ha ganado o si han empatado. En caso de
 algún ingreso incorrecto mostrar por pantalla que uno de los jugadores ha hecho
 trampa. */
+jugador1 = prompt("Jugador1 ingresa PIEDRA, PAPEL O TIJERA");
+respuesta1 = jugador1.trim().toUpperCase();
+jugador2 = prompt("Jugador2 ingresa PIEDRA, PAPEL O TIJERA");
+respuesta2 = jugador2.trim().toUpperCase();
+if (respuesta1 == respuesta2) {
+    console.log("Empate muchachos");
+} else if (respuesta1 == "PIEDRA") {
+    if (respuesta2 == "PAPEL") {
+        console.log("Jugador 2 GANO");
+    } else {
+        console.log("Jugador 1 GANO");
+    }
+} else if (respuesta1 == "PAPEL") {
+    if (respuesta2 == "TIJERA") {
+        console.log("Jugador 2 GANO");
+    } else {
+        console.log("Jugador 1 GANO");
+    }
+} else if (respuesta1 == "TIJERA") {
+    if (respuesta2 == "PIEDRA") {
+        console.log("Jugador 2 GANO");
+    } else {
+        console.log("Jugador 1 GANO");
+    }
+} else if (respuesta2 == "PIEDRA") {
+    if (respuesta1 == "PAPEL") {
+        console.log("Jugador 1 GANO");
+    } else {
+        console.log("Jugador 2 GANO");
+    }
+} else if (respuesta2 == "PAPEL") {
+    if (respuesta1 == "TIJERA") {
+        console.log("Jugador 1 GANO");
+    } else {
+        console.log("Jugador 2 GANO");
+    }
+} else if (respuesta2 == "TIJERA") {
+    if (respuesta1 == "PIEDRA") {
+        console.log("Jugador 1 GANO");
+    } else {
+        console.log("Jugador 2 GANO");
+    }
+} else {
+    console.log("Escriba bien su respuesta");
+}
 
 /* 11 Realizar un programa que permita el ingreso de un color y utilizando “switch” mostrar
 por pantalla los siguientes mensajes según las opciones: Blanco o Negro: Falta de
