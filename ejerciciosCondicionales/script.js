@@ -1,83 +1,72 @@
 /* 01 Realizar un programa que dado 2 números imprima por consola si el primer numero es
 mayor que el segundo. */
-/*
-let numero1
-let numero2
-numero1 = parseInt(prompt("Ingrese el primer número: "))
-numero2 = parseInt(prompt("Ingrese el segundo número: "))
+let numero1_1
+let numero2_1
+numero1_1 = parseInt(prompt("Ingrese el primer número: "))
+numero2_1 = parseInt(prompt("Ingrese el segundo número: "))
 
-if (numero1 => numero2) {
-    console.log(`primer número es mayor que segundo número`) 
+if (numero1_1 => numero2_1) {
+    console.log("primer número es mayor que segundo número") 
 } 
-*/
+
 
 /* 02 Realizar un programa que dado 2 números imprima por consola si los numeros son
 iguales o si son diferentes. */
-
-/* let num1
-let num2
-num1 = parseInt(prompt("Ingrese el primer número: "))
-num2 = parseInt(prompt("Ingrese el segundo número: "))
-
-if (num1 === num2) {
-    console.log(`Los dos números son iguales`)
+let num1_2
+let num2_2
+num1_2 = parseInt(prompt("Ingrese el primer número: "))
+num2_2 = parseInt(prompt("Ingrese el segundo número: "))
+if (num1_2 === num2_2) {
+    console.log("Los dos números son iguales")
 } else {
-    console.log(`Los dos números son diferentes`)
-} */
+    console.log("Los dos números son diferentes")
+}
 
 /* 03 Realizar un programa que dado 2 números imprima por consola cual de los 2 numeros
 es el mas grande o si son iguales. */
-
-/* let nume1
-let nume2
-nume1 = parseInt(prompt("Ingrese el primer número: "))
-nume2 = parseInt(prompt("Ingrese el segundo número: "))
-if (nume1 > nume2) {
+let nume1_3
+let nume2_3
+nume1_3 = parseInt(prompt("Ingrese el primer número: "))
+nume2_3 = parseInt(prompt("Ingrese el segundo número: "))
+if (nume1_3 > nume2_3) {
     console.log("El primero del dos numeros es el mas grande")
-} else if (nume1 < nume2) {
+} else if (nume1_3 < nume2_3) {
     console.log("El segundo del dos numeros es el mas grande")
 } else {
     console.log("Son Iguales")
 } 
- */
 
 /* 04 Realizar un programa que dado 3 números imprima por pantalla cual de los 3 es el más
-chico 
-
-let num1
-let num2
-let num3
-let menor
-num1=parseInt(prompt("ingrese el valor del primer numero"))
-num2=parseInt(prompt("ingrese el valor del segundo numero"))
-num3=parseInt(prompt("ingrese el valor del tercer numero"))
-if (num1 < num2 && num1 < num3) {
-    menor = num1
-} else if (num2<num1 && num2<num3) {
-    menor = num2
+chico */
+let num1_4
+let num2_4
+let num3_4
+let menor_4
+num1_4=parseInt(prompt("ingrese el valor del primer numero"))
+num2_4=parseInt(prompt("ingrese el valor del segundo numero"))
+num3_4=parseInt(prompt("ingrese el valor del tercer numero"))
+if (num1_4 < num2_4 && num1_4 < num3_4) {
+    menor_4 = num1_4
+} else if (num2_4<num1_4 && num2_4<num3_4) {
+    menor_4 = num2_4
 } else {
-   menor = num3
+   menor_4 = num3_4
 } 
-console.log("el numero chico es: " + menor)
-*/
+console.log("el numero chico es: " + menor_4)
 
 /* 05 Realizar un programa que dado 2 objetos representando personas con las propiedades
 nombre, edad y altura imprima por pantalla cual de las 2 personas es la mas alta y cual
 es la de mayor edad. */
-
-
 let persona1 = {
     nombre: "Carlos",
     edad: 35,
     altura: 150,
 };
-
 var persona2 = {
     nombre: "Juan",
     edad: 33,
     altura: 155,
 };
-
 if (persona1.altura > persona2.altura && persona1.edad > persona2.edad) {
     console.log(persona1.nombre + " Es mas alto y el de mayor edad")
 } else if (persona2.altura > persona1.altura && persona2.edad > persona1.edad) {
@@ -92,7 +81,6 @@ if (persona1.altura > persona2.altura && persona1.edad > persona2.edad) {
 y permita determinar si estas capacitado para conducir. La persona deberá cumplir con
 una edad mínima de 18 años, medir mas de 150cm y tener una visión de 8 de 10 como
 mínimo. */
-
 let nombre6
 let edad6
 let altura6
@@ -102,13 +90,11 @@ edad6 = parseInt(prompt("Ingresa tu edad"))
 altura6 = parseInt(prompt("Ingresa tu altura"))
 vision6 = prompt("Ingresa tu vision en una escala de 1 a 10")
 
-if ((Edad >= 18 && Altura >= 150) && Vision >= 8) {
+if ((edad6 >= 18 && altura6 >= 150) && vision6 >= 8) {
     console.log("Felicitaciones estas capacitado para conducir")
 } else {
     console.log("Lo siento aun no estas capacitado para conducir")
 }
-
-
 
 /* 07 Realizar un programa que permita el ingreso de los siguientes datos: Nombre, pase
 (vip o normal), si posee entrada (si o no, s o n, true o false). Las personas que posean
@@ -119,7 +105,6 @@ mismo nombre o poseer un pase vip o entrada, preguntar si desea comprar, caso
 afirmativo solicitar dinero disponible, si posee $1000 o más, mostrar mensaje de venta
 de entrada y bienvenida, caso contrario mostrar mensaje de rechazo de venta, y en
 caso contrario a no querer comprar, mostrar mensaje de despedida */
-
 let NombreMio = "jheesfri"
 let pase = "vip"
 let entrada = "si"
