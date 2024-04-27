@@ -168,3 +168,12 @@ o “LIMITADO”, el saldo que dispone y guardarlos en variables separadas. En u
 variable llamada puedePasar guardar el resultado de la operación resultante de si
 la persona tiene pase “VIP” o si posee un saldo mayor a 1000. Mostrando un
 mensaje que diga: La persona puede pasar y el resultado de la variable. */
+let pase
+let puedePasar
+let saldoDisponible
+
+pase = prompt("ingresa cual es tu pase VIP, NORMAL o LIMITADO")
+saldoDisponible = prompt("ingresa tu saldo disponible")
+
+puedePasar = pase=== "VIP" && saldoDisponible>=1000
+
