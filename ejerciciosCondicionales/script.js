@@ -6,8 +6,8 @@ numero1_1 = parseInt(prompt("Ingrese el primer número: "))
 numero2_1 = parseInt(prompt("Ingrese el segundo número: "))
 
 if (numero1_1 => numero2_1) {
-    console.log("primer número es mayor que segundo número") 
-} 
+    console.log("primer número es mayor que segundo número")
+}
 
 
 /* 02 Realizar un programa que dado 2 números imprima por consola si los numeros son
@@ -34,7 +34,7 @@ if (nume1_3 > nume2_3) {
     console.log("El segundo del dos numeros es el mas grande")
 } else {
     console.log("Son Iguales")
-} 
+}
 
 /* 04 Realizar un programa que dado 3 números imprima por pantalla cual de los 3 es el más
 chico */
@@ -42,16 +42,16 @@ let num1_4
 let num2_4
 let num3_4
 let menor_4
-num1_4=parseInt(prompt("ingrese el valor del primer numero"))
-num2_4=parseInt(prompt("ingrese el valor del segundo numero"))
-num3_4=parseInt(prompt("ingrese el valor del tercer numero"))
+num1_4 = parseInt(prompt("ingrese el valor del primer numero"))
+num2_4 = parseInt(prompt("ingrese el valor del segundo numero"))
+num3_4 = parseInt(prompt("ingrese el valor del tercer numero"))
 if (num1_4 < num2_4 && num1_4 < num3_4) {
     menor_4 = num1_4
-} else if (num2_4<num1_4 && num2_4<num3_4) {
+} else if (num2_4 < num1_4 && num2_4 < num3_4) {
     menor_4 = num2_4
 } else {
-   menor_4 = num3_4
-} 
+    menor_4 = num3_4
+}
 console.log("el numero chico es: " + menor_4)
 
 /* 05 Realizar un programa que dado 2 objetos representando personas con las propiedades
@@ -89,7 +89,6 @@ nombre6 = prompt("Ingresa tu nombre")
 edad6 = parseInt(prompt("Ingresa tu edad"))
 altura6 = parseInt(prompt("Ingresa tu altura"))
 vision6 = prompt("Ingresa tu vision en una escala de 1 a 10")
-
 if ((edad6 >= 18 && altura6 >= 150) && vision6 >= 8) {
     console.log("Felicitaciones estas capacitado para conducir")
 } else {
@@ -105,7 +104,7 @@ mismo nombre o poseer un pase vip o entrada, preguntar si desea comprar, caso
 afirmativo solicitar dinero disponible, si posee $1000 o más, mostrar mensaje de venta
 de entrada y bienvenida, caso contrario mostrar mensaje de rechazo de venta, y en
 caso contrario a no querer comprar, mostrar mensaje de despedida */
-let NombreMio = "jheesfri"
+let NombreMio = "Carlos"
 let pase = "vip"
 let entrada = "si"
 let usarEntrada = "si"
@@ -197,26 +196,25 @@ if (numeroIngresado == numeroIncognita) {
     }
 }
 
-
 /* 09 Crear un programa que permita ingresar tu edad y decir si eres un infante (0 a 12
 años), adolescente (13 a 18 años), un mayor joven (19 a 45 años) o un anciano (mas de
 45 años), y en caso de ingresar una edad mayor a 100 mostrar un mensaje
 preguntando si en realidad tiene esa edad. */
-edad = parseInt(prompt("Ingresa tu edad en numeros"));
-if (edad > 100) {
+let edad9 = parseInt(prompt("Ingresa tu edad en numeros"));
+if (edad9 > 100) {
     esVerdad = confirm("¿En realidad esa es tu edad?");
     if (esVerdad == true) {
         console.log("Llego tu hora amigo, despidete");
     } else {
         console.log("Me siento como cuando tu EX te mintio");
     }
-} else if (edad > 45) {
+} else if (edad9 > 45) {
     console.log("Eres un anciano");
-} else if (edad >= 19 && edad <= 45) {
+} else if (edad9 >= 19 && edad <= 45) {
     console.log("Eres un mayor joven");
-} else if (edad >= 13 && edad <= 18) {
+} else if (edad9 >= 13 && edad <= 18) {
     console.log("Eres un adolecente");
-} else if (edad > 0 && edad <= 12) {
+} else if (edad9 > 0 && edad <= 12) {
     console.log("Eres un infante");
 } else {
 
