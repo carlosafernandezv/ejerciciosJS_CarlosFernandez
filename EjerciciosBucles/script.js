@@ -107,15 +107,31 @@ objeto representa a 1 persona con al menos 4 propiedades, realizar un programa
 que muestre un mensaje de presentacion por cada elemento del array. */
 
 /* 9. Dado un array de 10 numeros, realizar un programa que recorra el array y solo
-muestre los numeros impares. */
+muestre los numeros impares. 
 
+let numeros = [ 80, 65, 35, 20, 42, 58, 96, 54, 45,63]
+//Uso filter (que es un filtro en arreglo) para obtener solo los números que 
+// tengan residuo 0.
+const impares = numeros.filter(x=> x%2 === 0).length
+console.log('La cantidad de numeros impares que hay es: ' + impares)
+*/
 /* 10. Realizar un programa que permita la entrada de numeros y calcule la suma de los
 numeros pares por un lado y los impares por otro, el ingreso de dato finaliza cuando
 el usuario ingresa un 0. */
 
 /* 11. Dado un array de 10 numeros, realizar un programa que imprima por pantalla el
 numero mas grande. */
+let numeros = [ 80, 65, 35, 20, 42, 58, 96, 54, 45,63]
+let mayor = 0
 
+for (i = 0; i < numeros.length; i++) {
+    
+   if (numeros[i]>mayor){
+    mayor=numeros[i]
+   }
+  
+}
+console.log(mayor);
 /* 12. Dado un array de 10 numeros, realizar un programa que imprima por pantalla el
 numero mas chico. */
 
