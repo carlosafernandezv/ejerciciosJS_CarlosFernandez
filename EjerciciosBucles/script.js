@@ -120,7 +120,7 @@ numeros pares por un lado y los impares por otro, el ingreso de dato finaliza cu
 el usuario ingresa un 0. */
 
 /* 11. Dado un array de 10 numeros, realizar un programa que imprima por pantalla el
-numero mas grande. */
+numero mas grande. 
 let numeros = [ 80, 65, 35, 20, 42, 58, 96, 54, 45,63]
 let mayor = 0
 
@@ -131,9 +131,9 @@ for (i = 0; i < numeros.length; i++) {
    }
   
 }
-console.log(mayor);
+console.log(mayor);*/
 /* 12. Dado un array de 10 numeros, realizar un programa que imprima por pantalla el
-numero mas chico. */
+numero mas chico. 
 let arreglo = [3 , 6, 2, 56, 32, 5, 89, 32];
 let mayor2 = arreglo.length;
  
@@ -144,7 +144,8 @@ for(i = 0; i < arreglo.length; i++){
     }
 }
  
-console.log(mayor2);
+console.log(mayor2);*/
+
 /* 13. Realizar un programa que permita jugar a piedra papel o tijeras, se debera poder
 ingresar los nombres de 2 jugadores. En el bucle del juego se debera pedir 1 a 1 las
 manos de cada jugador, y en cada turno se debera seguir jugando solo si se produjo
