@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejercicio DOM</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ejerciciosDOM/css/bootstrap.min.css">
     <link rel="shortcut icon" href="/ejerciciosDOM/image/favicon.svg" type="image/x-icon">
 </head>
-<body>
-    <header>
 
+<body>
+    <header class="p-3 text-bg-dark">
+
+        <div class="container">
+
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                </ul>
+
+            </div>
+        </div>
     </header>
     <main>
-
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                  <label for="estatura" class="form-label">Estatura: Centimetros</label>
+                  <input type="text" class="form-control" id="estatura">
+                </div>
+                <div class="mb-3">
+                  <label for="peso" class="form-label">Peso: Kilogramos</label>
+                  <input type="text" class="form-control" id="peso">
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Calcular</button>
+              </form>
+        </div>
     </main>
     <footer>
-        
+
     </footer>
 
 
 
 
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/ejerciciosDOM/js/bootstrap.min.js"></script>
 </body>
+
 </html>
