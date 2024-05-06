@@ -31,15 +31,16 @@
 
                     <h2 class="text-center">Calculadora - IMC</h2>
 
-                    <form>
+                    <form action="#">
+                        <div id="error"></div>
                         <div class="mb-3">
                             <label for="estatura" class="form-label">Estatura: (Cm)</label>
-                            <input type="text" class="form-control" id="estatura">
+                            <input type="number" class="form-control" id="estatura" placeholder="Estatura" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="peso" class="form-label">Peso: (Kg)</label>
-                            <input type="text" class="form-control" id="peso">
+                            <input type="number" class="form-control" id="peso" placeholder="Peso" required>
                         </div>
 
                         <!-- <div class="mb-3">
@@ -48,8 +49,8 @@
                         </div> -->
 
                         <div>
-                            <div id="resultado"></div>
-                            <button type="submit" class="btn btn-primary">Calcular</button>
+                            <div id="resultado" class="p-3"></div>
+                            <button type="submit" id="calcular" class="btn btn-primary">Calcular</button>
                         </div>
 
                     </form>
@@ -59,16 +60,18 @@
 
                 <div class="col bg-primary-subtle p-3 rounded-3 m-5">
 
-                    <h2 class="text-center">Calculadora - IMC</h2>
+                    <h2 class="text-center">Conversor de Divisas</h2>
 
                     <form>
                         <div class="mb-3">
-                            <label for="dolar" class="form-label">Dolare: (USD)</label>
+                            <h3>De</h3>
+                            <label for="dolar" class="form-label">Dólar Estadounidense: (USD)</label>
                             <input type="number" class="form-control" id="estatura">
                         </div>
 
                         <div class="mb-3">
-                            <label for="Peso" class="form-label">Pesos: (COP)</label>
+                            <h3>A</h3>
+                            <label for="Peso" class="form-label">Peso Colombiano: (COP)</label>
                             <input type="number" class="form-control" id="peso">
                         </div>
 
@@ -79,7 +82,7 @@
 
                         <div>
                             <div id="resultado"></div>
-                            <button type="submit" class="btn btn-primary">Calcular</button>
+                            <button type="submit" class="btn btn-primary">Convertir</button>
                         </div>
 
                     </form>
