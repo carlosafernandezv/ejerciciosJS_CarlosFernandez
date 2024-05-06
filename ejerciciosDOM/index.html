@@ -15,31 +15,81 @@
         <div class="container">
 
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
                 </ul>
-
             </div>
         </div>
     </header>
     <main>
         <div class="container">
-            <form>
-                <div class="mb-3">
-                  <label for="estatura" class="form-label">Estatura: Centimetros</label>
-                  <input type="text" class="form-control" id="estatura">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3">
+                <div class="col bg-primary-subtle p-3 rounded-3 m-5">
+
+                    <h2 class="text-center">Calculadora - IMC</h2>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="estatura" class="form-label">Estatura: (Cm)</label>
+                            <input type="text" class="form-control" id="estatura">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="peso" class="form-label">Peso: (Kg)</label>
+                            <input type="text" class="form-control" id="peso">
+                        </div>
+
+                        <!-- <div class="mb-3">
+                            <label for="resultado" class="form-label">Resultado:</label>
+                            <input type="text" class="form-control" id="resultado">
+                        </div> -->
+
+                        <div>
+                            <div id="resultado"></div>
+                            <button type="submit" class="btn btn-primary">Calcular</button>
+                        </div>
+
+                    </form>
+
                 </div>
-                <div class="mb-3">
-                  <label for="peso" class="form-label">Peso: Kilogramos</label>
-                  <input type="text" class="form-control" id="peso">
+
+
+                <div class="col bg-primary-subtle p-3 rounded-3 m-5">
+
+                    <h2 class="text-center">Calculadora - IMC</h2>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="estatura" class="form-label">Estatura: (Cm)</label>
+                            <input type="text" class="form-control" id="estatura">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="peso" class="form-label">Peso: (Kg)</label>
+                            <input type="text" class="form-control" id="peso">
+                        </div>
+
+                        <!-- <div class="mb-3">
+                                <label for="resultado" class="form-label">Resultado:</label>
+                                <input type="text" class="form-control" id="resultado">
+                            </div> -->
+
+                        <div>
+                            <div id="resultado"></div>
+                            <button type="submit" class="btn btn-primary">Calcular</button>
+                        </div>
+
+                    </form>
+
+
                 </div>
-               
-                <button type="submit" class="btn btn-primary">Calcular</button>
-              </form>
+
+            </div>
         </div>
+
     </main>
+
     <footer>
 
     </footer>
@@ -48,6 +98,7 @@
 
 
     <script src="/ejerciciosDOM/js/bootstrap.min.js"></script>
+    <script src="/ejerciciosDOM/js/script.js"></script>
 </body>
 
 </html>
