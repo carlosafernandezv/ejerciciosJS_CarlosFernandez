@@ -19,7 +19,7 @@
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="/ejerciciosDOM/notas.html" class="nav-link px-2 text-white">Notas</a></li>
                 </ul>
             </div>
         </div>
@@ -35,7 +35,7 @@
                         <div id="error"></div>
                         <div class="mb-3">
                             <label for="estatura" class="form-label">Estatura: (Cm)</label>
-                            <input type="number" class="form-control" id="estatura" placeholder="Estatura" >
+                            <input type="number" class="form-control" id="estatura" placeholder="Estatura">
                         </div>
 
                         <div class="mb-3">
@@ -48,7 +48,7 @@
                         </div>
 
                         <div>
-                            
+
                             <button type="button" id="calcular" class="btn btn-primary">Calcular</button>
                         </div>
 
@@ -63,19 +63,22 @@
 
                     <form>
                         <div class="mb-3">
-                            <h3>De</h3>
-                            <label for="dolar" class="form-label">Dólar Estadounidense: (USD)</label>
-                            <input type="number" class="form-control" id="dolar">
+                            <div class="d-flex justify-content-between">
+                                <h4>De:</h4>
+                                <label for="inputDolares" class="form-label">Dólar Estadounidense: (USD)</label>
+                            </div>
+                            <input id="inputDolares" class="form-control" type="number" placeholder="Dolar" oninput="convertirDolaresAPesos(this.value)" >
                         </div>
 
                         <div class="mb-3">
-                            <h3>A</h3>
-                            <label for="Pesos" class="form-label">Peso Colombiano: (COP)</label>
-                            <input type="number" class="form-control" id="pesos">
+                            <div class="d-flex justify-content-between">
+                                <h3>A</h3>
+                                <label for="inputPesos" class="form-label">Peso Colombiano: (COP)</label>
+                            </div>
+                            <input id="inputPesos" class="form-control" type="number" placeholder="Pesos" oninput="convertirPesosADolares(this.value)" >
                         </div>
 
                     </form>
-
 
                 </div>
 
@@ -95,7 +98,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="/ejerciciosDOM/js/bootstrap.min.js"></script>
-    <script src="/ejerciciosDOM/js/script.js"></script>
+    <script src="/ejerciciosDOM/js/index.js"></script>
 </body>
 
 </html>
