@@ -4,76 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notas</title>
+    <title>Notes App</title>
+    <link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/ejerciciosDOM/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="/ejerciciosDOM/image/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ejerciciosDOM/css/style.css">
 </head>
 
 <body>
-    <header class="p-3 text-bg-dark">
+    <header>
 
-        <div class="container">
-
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="/ejerciciosDOM/index.html" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Notas</a></li>
-                </ul>
-            </div>
-        </div>
     </header>
 
     <main>
-        <div class="container my-3">
+        <div class="d-flex align-items-center justify-content-center">
+            <form class="w-100 my-5 px-5" role="search">
+                <input type="search" class="form-control " placeholder="Search notes..." aria-label="Search"
+                    id="search">
+                <div class="d-flex justify-content-between my-2 align-items-center">
 
-            <div class="card  my-2 mx-2">
-                <div class="card-body">
-                    <h5 class="card-title">Nueva Nota</h5>
-
-                    <div class="form-group">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="titulo" placeholder="Titulo">
-                        </div>
-
-                        <textarea class="form-control" placeholder=" Escribe tu nota aqui" id="addtxt"
-                            rows="4"></textarea>
+                    <div class="form-check form-switch ">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Realizadas</label>
                     </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            <label class="form-check-label" for="flexSwitchCheckDefault">Realizadas</label>
+                    <a href="/details.html" class="btn btn-sm btn-success " data-bs-toggle="modal"
+                        data-bs-target="#modalAddNote">ADD NOTE</a>
+                </div>
+            </form>
+
+            <div class="modal" tabindex="-1" id="modalAddNote">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Add note</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div>
-                            <button id="addbtn" class="btn btn-outline-primary m-3" type="button"> Guardar </button>
-                            <button id="clrbtn" class="btn btn-outline-primary m-3" type="button"> Borrar </button>
+                        <div class="modal-body">
+                            <input type="text" class="form-control" id="titleAddNote" placeholder="Add title..." value=""
+                                >
+                            <textarea class="form-control my-3" id="descriptionAddNote" placeholder="Add description..."
+                                rows="5" ></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" onclick="limpiarElemento()" >Clear</button>
+                            <button type="button" id="BtnSave" class="btn btn-success" onclick="revisar()" >Save changes</button>
+                            
                         </div>
                     </div>
                 </div>
+
             </div>
-            <div class="container-fluid bg-light p-3">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
-            </div>
-            <hr>
-            <h1> Your notes</h1>
-            <hr>
-            <div class="row container-fluid" id="notes">
+
+
+        </div>
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="cardPadre row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+                    
+                    
+                </div>
             </div>
         </div>
-
-
     </main>
-
-
+    <footer class="py-3 mx-5 border-top">
+        <div class="d-flex align-items-center justify-content-between ">
+            <div class="fooImg">
+                <a href="https://www.facebook.com/" class="me-2 ">
+                    <img src="/ejerciciosDOM/image/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/" class="me-2">
+                    <img src="/ejerciciosDOM/image/instagram.png" alt="instagram">
+                </a>
+                <a href="https://wa.me/11455555555?text=Hola" class="me-2">
+                    <img src="/ejerciciosDOM/image/whatsapp.png" alt="facebook">
+                </a>
+            </div>
+            <div>
+                <span class="mb-3 mb-md-0 text-muted">© 2024 Carlos Fernandez</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="/ejerciciosDOM/js/bootstrap.min.js"></script>
     <script src="/ejerciciosDOM/js/notas.js"></script>
-
 </body>
 
 </html>
