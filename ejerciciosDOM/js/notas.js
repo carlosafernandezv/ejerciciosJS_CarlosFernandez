@@ -127,7 +127,6 @@ function revisar(titulo, descripcion){
 
 
 
-
 function marcarRealizada(idObjeto){
     if (notas[idObjeto-1].realizada == true){
         console.log("false");
@@ -140,3 +139,15 @@ function marcarRealizada(idObjeto){
     
 
 }
+
+
+let chk = document.getElementById("flexSwitchCheckChecked")
+chk.addEventListener('change',(evento)=>{
+    //console.log(evento);
+    //console.log(evento.target);
+    console.log(evento.target.value);
+    let tarjetasFiltradas = notas.filter(notas=>notas.realizada==evento.target.value)
+    pintarTarjetas(tarjetasFiltradas,padreTarjetas)
+
+})
+console.log(chk);
