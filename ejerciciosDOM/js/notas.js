@@ -68,7 +68,6 @@ function crearTarjeta(divPadre, tarjeta) {
 pintarTarjetas(notas, padreTarjetas)
 
 function pintarTarjetas(arregloAPintar, divPadre) {
-     
     divPadre.innerHTML = ""
     for (let i = 0; i < arregloAPintar.length; i++) {
         crearTarjeta(divPadre, arregloAPintar[i])
@@ -140,5 +139,36 @@ function marcarRealizada(idObjeto){
 
 }
 
+let chk = document.getElementById("form")
+console.log(chk);
 
+chk.addEventListener('change', (evento)=>{
+    console.log(evento);
+    console.log(evento.target);
+    console.log(evento.target.checked);
+    let tarjetasFiltradas = notas.filter(notas=>notas.realizada==evento.target.checked)
+    if (evento.target.checked) {
 
+        pintarTarjetas(tarjetasFiltradas,padreTarjetas)    
+        
+    } else {
+        pintarTarjetas(notas,padreTarjetas)
+    }
+    
+})
+
+let buscar =document.getElementById("search")
+console.log(buscar);
+
+buscar.addEventListener('input',(e)=>{
+    console.log(e.target.value);
+
+    let tarjetasFiltradas = notas.filter(notas=>notas.name.toLowerCase().includes(e.target.value.toLowerCase()))
+    
+    if (e.target.value != "") {
+        pintarTarjetas(tarjetasFiltradas,padreTarjetas)
+    }
+    else{
+        pintarTarjetas(notas,padreTarjetas)
+    }
+})
